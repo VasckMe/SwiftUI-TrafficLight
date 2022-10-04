@@ -34,7 +34,7 @@ struct ContentView: View {
                         .stroke(Color.white, lineWidth: 5)
                 )
             }
-            .padding(.top, 100)
+            .padding(.vertical, 100)
         }
         .ignoresSafeArea()
     }
