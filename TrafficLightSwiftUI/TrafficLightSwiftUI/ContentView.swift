@@ -16,17 +16,25 @@ struct ContentView: View {
                 CircleView(color: .yellow)
                 CircleView(color: .green)
                 
+                Spacer()
+                
                 Button() {
         
                 } label: {
                     Text("Next")
+                        .bold()
+                        .font(.system(size: 30))
                 }
                 .frame(width: 250, height: 80)
-                .foregroundColor(.orange)
+                .foregroundColor(.white)
+                .background(Color.orange)
+                .cornerRadius(30)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 30)
+                        .stroke(Color.white, lineWidth: 5)
+                )
             }
-            
-            
-            
+            .padding(.top, 100)
         }
         .ignoresSafeArea()
     }
