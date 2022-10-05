@@ -13,6 +13,7 @@
 		1875B19E28ECAC7200BC67F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1875B19D28ECAC7200BC67F5 /* Preview Assets.xcassets */; };
 		1875B1A528ECAD0900BC67F5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875B1A428ECAD0900BC67F5 /* CircleView.swift */; };
 		1875B1A828ED724300BC67F5 /* TrafficLightStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875B1A728ED724300BC67F5 /* TrafficLightStage.swift */; };
+		1875B1AA28ED752D00BC67F5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875B1A928ED752D00BC67F5 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1875B19D28ECAC7200BC67F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1875B1A428ECAD0900BC67F5 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1875B1A728ED724300BC67F5 /* TrafficLightStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightStage.swift; sourceTree = "<group>"; };
+		1875B1A928ED752D00BC67F5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1875B1A628ED722F00BC67F5 /* Models */,
 				1875B19628ECAC5000BC67F5 /* TrafficLightSwiftUIApp.swift */,
 				1875B19828ECAC5000BC67F5 /* ContentView.swift */,
+				1875B1A928ED752D00BC67F5 /* ButtonView.swift */,
 				1875B1A428ECAD0900BC67F5 /* CircleView.swift */,
 				1875B19A28ECAC7200BC67F5 /* Assets.xcassets */,
 				1875B19C28ECAC7200BC67F5 /* Preview Content */,
@@ -153,6 +156,7 @@
 			files = (
 				1875B1A528ECAD0900BC67F5 /* CircleView.swift in Sources */,
 				1875B1A828ED724300BC67F5 /* TrafficLightStage.swift in Sources */,
+				1875B1AA28ED752D00BC67F5 /* ButtonView.swift in Sources */,
 				1875B19928ECAC5000BC67F5 /* ContentView.swift in Sources */,
 				1875B19728ECAC5000BC67F5 /* TrafficLightSwiftUIApp.swift in Sources */,
 			);
