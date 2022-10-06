@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ButtonView: View {
     
-    @State var completion: () -> Void
+    var completion: () -> Void
                
     var body: some View {
         ZStack {
