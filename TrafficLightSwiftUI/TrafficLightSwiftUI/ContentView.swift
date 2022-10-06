@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var redAlpha: Double = 0.2
+    @State private var yellowAlpha: Double = 0.2
+    @State private var greenAlpha: Double = 0.2
+    
+    @State private var stage: TrafficLightStage = .red
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(.black)
+            VStack {
+                CircleView(color: .red, opacity: redAlpha)
+                CircleView(color: .yellow, opacity: yellowAlpha)
+                CircleView(color: .green, opacity: greenAlpha)
+                
+                Spacer()
+                ButtonView(completion: trafficLightChanger)
+            }
+            .padding(.vertical, 100)
         }
-        .padding()
+        .ignoresSafeArea()
+    }
+        func trafficLightChanger() {
+        redAlpha = 0.2
+        yellowAlpha = 0.2
+        greenAlpha = 0.2
+    
+        switch stage {
+        case .red:
+            redAlpha = 1.0
+            stage = .redYellow
+        case .redYellow:
+            redAlpha = 1.0
+            yellowAlpha = 1.0
+            stage = .green
+        case .green:
+            greenAlpha = 1.0
+            stage = .yellow
+        case .yellow:
+            yellowAlpha = 1.0
+            stage = .red
+        }
     }
 }
 
